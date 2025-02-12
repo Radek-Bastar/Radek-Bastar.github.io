@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje první stránka s videem</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .live-text {
+            text-align: left;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Video z pořadu Sama doma 11. 2. 2025</h1>
     </header>
    
-    
     <main>
-
-        
-        <section>
-            <h2>Video z pořadu Sama doma 11. 2. 2025</h2>
+        <section class="video-container">
             <!-- Vložení YouTube videa -->
             <iframe 
                 width="560" 
@@ -26,10 +36,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
             </iframe>
+            <p class="live-text">Byl to živý přenos, Takže co se vypustilo do světa, už tam navždy zůstane<span>&#128518;</span></p>
         </section>
-        
-
     </main>
-    
 </body>
 </html>
